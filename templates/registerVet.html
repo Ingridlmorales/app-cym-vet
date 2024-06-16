@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title> Registrar </title>
+        <link rel="stylesheet" href="../static/css/styleregistrar.css" type="text/css" media="all" />
+        <script src="../static/js/appregistrar.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body>
+        <h1>
+        Registrar Mascota 
+        <img src="https://img.icons8.com/?size=100&id=120341&format=png&color=000000" 
+         style="max-width: 50px; max-height: 50px; margin-center: 10px;" />
+        <img src="https://img.icons8.com/?size=100&id=120353&format=png&color=000000" 
+         style="max-width: 50px; max-height: 50px; margin-center: 10px;" /> 
+        </h1> 
+    <fieldset>
+      <legend> Elige Mascota </legend>
+      <div>
+        <input type="checkbox" id="canino" name="interest" value="canino" />
+        <label for="canino" >Canino</label>
+      </div>
+      <div>
+        <input type="checkbox" id="felino" name="interest" value="felino" />
+        <label for="felino">Felino</label>
+      </div>
+    </fieldset> <br>
+        <form action="/registrar" method="post">
+            <label> Asignar Turno </label> <input type="number" name="turno"/> <br> <br>
+            <label> Nombre </label> <input type="text" name="nombre"/> <br> <br>
+            <label> Raza </label> <input type="text" name="raza"/> <br> <br>
+            <label> Edad </label> <input type="number" name="edad"/> <br> <br>
+            <label> Fecha de nacimiento </label> <input type="date" name="fecha-nacimiento"/> <br> <br>
+            <label> Observaciones </label> <input type="text" name="Observaciones"/> <br> <br>
+            <button>Registrar</button>
+            <button>Regresar</button>
+        </form>
+    </body>
+</html>

@@ -1,9 +1,9 @@
 function registrar_mascota(){
-    window.location = "/registrar"
+    window.location = "/_static/templates/registerVet.html"
 }
 
 function consultar_mascota(){
-    window.location = "/consultar"
+    alert("Consultando..........")
 }
 
 function consulta_urgencias(){
